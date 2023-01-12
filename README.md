@@ -1,4 +1,4 @@
-# dataDirCleaner
+# backupMerger
 
 ### replaceChars.sh
 is to walk through the directory and removes sepecial characters like ...
@@ -26,9 +26,9 @@ is to walk through the directory and removes sepecial characters like ...
 * Changed:  /home/marc/why.shouldn.t.you.name.files.very.bad...ugly.like..this..file.
 
 
-### index.sh
+### index.sh /home/marc/diskA
 is to index a harddisk, it will make a file that lists all files in the root where you exec the command and add a sha1sum to identify duplicated files
-
+creates the file backupMerger.<timestamp>
 
 ### copyMissing.py dirlistA.txt dirlistB targetDir (Python3)
 is to copy the missing files from Directory or Disk A to Directory or Disk B.
