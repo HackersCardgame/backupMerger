@@ -31,3 +31,9 @@ is to copy the missing files from Directory or Disk A to Directory or Disk B.
 #### Example:
 python3 copyMissing.py /home/marc/diskA/dirMerger.txt /home/marc/diskB/dirMerger.txt /home/marc/diskA/newFiles/
 (the Directory /home/marc/diskA/newFiles/ must exist)
+
+if script sees that the file /home/marc/diskB/tagebuch/1999/Januar/19990123.txt only exists on DiskB it will copy the file to /home/marc/diskA/newFiles/diskB/tagebuch/1999/Januar/19990123.txt. Since we give the dirMerger.txt file as parameeter and defined that the file is in the root of the specific directory we now the the names, and we then can do that also for /home/marc/diskC and if we do a rdfind [1] to remove the duplicated files in /home/marc/diskA/newFiles we can circumvent new duplicated files.
+
+
+# TODO
+* [1] should take alwas the file with the oldest date since some timestamps were modified since data collection since about 1986
