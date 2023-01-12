@@ -18,8 +18,8 @@ DoubleQuotes
 ... and replaces them with a dot like "the scene" does in filenames. If you like your spaces in filenames don't run that script.
 
 #### Example:
-Original: /home/marc/why shouldn't you name files very bad | ugly like "this" file?
-Changed:  /home/marc/why.shouldn.t.you.name.files.very.bad...ugly.like."this".file.
+* Original: /home/marc/why shouldn't you name files very bad | ugly like "this" file?
+* Changed:  /home/marc/why.shouldn.t.you.name.files.very.bad...ugly.like."this".file.
 
 
 ### index.sh
