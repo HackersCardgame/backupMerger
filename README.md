@@ -7,8 +7,7 @@ is to walk through the directory and removes sepecial characters like ...
 * |
 * Quotes
 * DoubleQuotes
-* <
-* >
+* < >
 * ?
 * {
 * }
