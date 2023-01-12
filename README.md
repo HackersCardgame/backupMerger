@@ -13,6 +13,9 @@ is to walk through the directory and removes sepecial characters like ...
 * }
 * [
 * ]
+* :
+* ;
+ 
 
 ... and replaces them with a dot like "the scene" does in filenames. If you like your spaces in filenames don't run that script.
 
