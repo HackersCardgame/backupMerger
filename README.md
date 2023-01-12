@@ -18,7 +18,7 @@ is to walk through the directory and removes sepecial characters like ...
 
 #### Example:
 * Original: /home/marc/why shouldn't you name files very bad | ugly like "this" file?
-* Changed:  /home/marc/why.shouldn.t.you.name.files.very.bad...ugly.like."this".file.
+* Changed:  /home/marc/why.shouldn.t.you.name.files.very.bad...ugly.like..this..file.
 
 
 ### index.sh
