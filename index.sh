@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Color Definitions
 #==============================================================================
 red="\e[91m"
@@ -14,7 +16,7 @@ then
 echo -e "
 Usage:
 ------
-${blue} ${0} ${red} direcotry${default} "
+${blue}${0}${red} direcotry${default}"
 echo
 echo " arguments ---------------->  ${@}     "
 echo " \$1 ----------------------->  $1       "
@@ -27,8 +29,9 @@ exit 0
 fi
 #==============================================================================
 
+dat=$(date +%Y%m%d%H%M%S)
+
 cd $1
 
 #find . -maxdepth 1 -type f -exec sha1sum '{}' -z \; -printf "🐧%p🐧%TY%Tm%Td🐧%TH%TM%TS \n"
-find . -maxdepth 1 -type f -exec ./sha1.sh '{}' \; -printf "\t%p\t%TY%Tm%Td%TH%TM%TS\t%s \n"
-
+find . -type f -exec ./sha1.sh '{}' \; -printf "\t%p\t%TY%Tm%Td%TH%TM%TS\t%s \n" | tee -a backupMerger.$dat
